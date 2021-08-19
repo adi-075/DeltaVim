@@ -1,0 +1,8 @@
+require('plugins')
+require('settings')
+require('keymappings')
+require('dashboard')
+require('statusline')
+--require('material').set()
+require('colorscheme')
+require 'colorizer'.setup()
