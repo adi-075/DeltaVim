@@ -1,11 +1,14 @@
-local M = {}
+vim.o.number = true
+vim.opt.termguicolors = true
 
+local M = {}
 M.load_options = function()
+
   local opt = vim.opt
 
   local default_options = {
     backup = false, -- creates a backup file
-    clipboard = "unnamedplus", -- allows neovim to access the system clipboard
+    clipboard = "unnamedplus", -- allows neovim to access thr system clipboard
     cmdheight = 2, -- more space in the neovim command line for displaying messages
     colorcolumn = "99999", -- fixes indentline for now
     completeopt = { "menuone", "noselect" },
@@ -26,7 +29,7 @@ M.load_options = function()
     splitbelow = true, -- force all horizontal splits to go below current window
     splitright = true, -- force all vertical splits to go to the right of current window
     swapfile = false, -- creates a swapfile
-    termguicolors = true, -- set term gui colors (most terminals support this)
+    --termguicolors = true, -- set term gui colors (most terminals support this)
     timeoutlen = 100, -- time to wait for a mapped sequence to complete (in milliseconds)
     title = true, -- set the title of window to the value of the titlestring
     -- opt.titlestring = "%<%F%=%l/%L - nvim" -- what the title of the window will be set to

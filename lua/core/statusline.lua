@@ -1,4 +1,4 @@
-require'lualine'.setup {
+--[[ require'lualine'.setup {
   options = {
     icons_enabled = true,
     theme = 'dracula',
@@ -29,12 +29,16 @@ require'lualine'.setup {
   },
   tabline = {},
   extensions = {}
-}
+} ]]
+
+
+
+
 
 -- Eviline config for lualine
 -- Author: shadmansaleh
 -- Credit: glepnir
---[[local lualine = require 'lualine'
+local lualine = require 'lualine'
 
 -- Color table for highlights
 local colors = {
@@ -249,4 +253,4 @@ ins_right {
 }
 
 -- Now don't forget to initialize lualine
-lualine.setup(config) ]] 
+lualine.setup(config)  

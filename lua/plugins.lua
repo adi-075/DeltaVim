@@ -29,4 +29,14 @@ function()
   use 'liuchengxu/space-vim-dark'
   use 'marko-cerovac/material.nvim'
   use 'norcalli/nvim-colorizer.lua'
-end)
+  use 'windwp/nvim-autopairs'
+--  use 'romgrk/barbar.nvim'
+  use 'neovim/nvim-lspconfig'
+  use 'kabouzeid/nvim-lspinstall'
+  use 'hrsh7th/nvim-compe'
+  use 'hrsh7th/vim-vsnip'
+  use 'ChristianChiarulli/nvcode-color-schemes.vim'
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'nvim-treesitter/playground'
+  use 'p00f/nvim-ts-rainbow'
+  end)
