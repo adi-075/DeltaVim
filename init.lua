@@ -12,9 +12,11 @@ require 'colorizer'.setup()
 --require('core.bufferline')
 require('core.autopairs')
 require('core.nv-colorizer')
+require('core.whichkey')
+require('core.terminal')
 
 -- Neovim LSP --
 require('lspauto')
 require('core.nv-compe')
 require('nv-treesitter')
-
+require('core.nv-lspkind')

@@ -39,4 +39,7 @@ function()
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-treesitter/playground'
   use 'p00f/nvim-ts-rainbow'
+  use 'onsails/lspkind-nvim'
+  use 'folke/which-key.nvim'
+  use 'akinsho/nvim-toggleterm.lua'
   end)
