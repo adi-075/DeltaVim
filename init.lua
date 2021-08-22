@@ -9,11 +9,12 @@ require('core.dashboard')
 require('core.statusline')
 --require('material').set()
 require 'colorizer'.setup()
---require('core.bufferline')
+require('core.bufferline')
 require('core.autopairs')
 require('core.nv-colorizer')
 require('core.whichkey')
 require('core.terminal')
+require('core.nv-comment')
 
 -- Neovim LSP --
 require('lspauto')

@@ -5,7 +5,8 @@ local opts = { noremap = true, silent = true }
 map('n', '<S-l>', ':BufferPrevious<CR>', opts)
 map('n', '<S-h>', ':BufferNext<CR>', opts)
 
-vim.g.bufferline = {
+require("which-key").setup{
+
   animation = true,
   auto_hide = false,
   tabpages = true,

@@ -1,81 +1,26 @@
+vim.o.clipboard="unnamedplus"             --Copy paste between vim and everything else
+vim.o.incsearch=true
+vim.o.guifont="JetBrainsMono\\ Nerd\\ Font\\ Mono:h18"
+vim.o.termguicolors=true
+vim.o.background="dark"                   --tell vim what the background color looks like
+vim.o.shiftwidth=2                        --Change the number of space characters inserted for indentation
+vim.o.smarttab=true                       --Makes tabbing smarter will realize you have 2 vs 4
+vim.o.expandtab=true                      --Converts tabs to spaces
+vim.o.smartindent=true                    --Makes indenting smart
+vim.o.autoindent=true                     --Good auto indent
+vim.o.laststatus=2                        --Always display the status line
 vim.o.number = true
-vim.opt.termguicolors = true
-
-local M = {}
-M.load_options = function()
-
-  local opt = vim.opt
-
-  local default_options = {
-    backup = false, -- creates a backup file
-    clipboard = "unnamedplus", -- allows neovim to access thr system clipboard
-    cmdheight = 2, -- more space in the neovim command line for displaying messages
-    colorcolumn = "99999", -- fixes indentline for now
-    completeopt = { "menuone", "noselect" },
-    conceallevel = 0, -- so that `` is visible in markdown files
-    fileencoding = "utf-8", -- the encoding written to a file
-    foldmethod = "manual", -- folding, set to "expr" for treesitter based folding
-    foldexpr = "", -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
-    guifont = "monospace:h17", -- the font used in graphical neovim applications
-    hidden = true, -- required to keep multiple buffers and open multiple buffers
-    hlsearch = true, -- highlight all matches on previous search pattern
-    ignorecase = true, -- ignore case in search patterns
-    mouse = "a", -- allow the mouse to be used in neovim
-    pumheight = 10, -- pop up menu height
-    showmode = false, -- we don't need to see things like -- INSERT -- anymore
-    showtabline = 2, -- always show tabs
-    smartcase = true, -- smart case
-    smartindent = true, -- make indenting smarter again
-    splitbelow = true, -- force all horizontal splits to go below current window
-    splitright = true, -- force all vertical splits to go to the right of current window
-    swapfile = false, -- creates a swapfile
-    --termguicolors = true, -- set term gui colors (most terminals support this)
-    timeoutlen = 100, -- time to wait for a mapped sequence to complete (in milliseconds)
-    title = true, -- set the title of window to the value of the titlestring
-    -- opt.titlestring = "%<%F%=%l/%L - nvim" -- what the title of the window will be set to
-    undodir = CACHE_PATH .. "/undo", -- set an undo directory
-    undofile = true, -- enable persistent undo
-    updatetime = 300, -- faster completion
-    writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
-    expandtab = true, -- convert tabs to spaces
-    shiftwidth = 2, -- the number of spaces inserted for each indentation
-    tabstop = 2, -- insert 2 spaces for a tab
-    cursorline = true, -- highlight the current line
-    number = true, -- set numbered lines
-    relativenumber = false, -- set relative numbered lines
-    numberwidth = 4, -- set number column width to 2 {default 4}
-    signcolumn = "yes", -- always show the sign column, otherwise it would shift the text each time
-    wrap = false, -- display lines as one long line
-    spell = false,
-    spelllang = "en",
-    scrolloff = 8, -- is one of my fav
-    sidescrolloff = 8,
-  } ---  VIM ONLY COMMANDS  ---cmd "filetype plugin on"cmd('let &titleold="' .. TERMINAL .. '"')cmd "set inccommand=split"cmd "set iskeyword+=-"
-
-  ---  SETTINGS  ---
-
-  opt.shortmess:append "c"
-
-  for k, v in pairs(default_options) do
-    vim.opt[k] = v
-  end
-end
-
-M.load_commands = function()
-  local cmd = vim.cmd
-  if lvim.line_wrap_cursor_movement then
-    cmd "set whichwrap+=<,>,[,],h,l"
-  end
-
-  if lvim.transparent_window then
-    cmd "au ColorScheme * hi Normal ctermbg=none guibg=none"
-    cmd "au ColorScheme * hi SignColumn ctermbg=none guibg=none"
-    cmd "au ColorScheme * hi NormalNC ctermbg=none guibg=none"
-    cmd "au ColorScheme * hi MsgArea ctermbg=none guibg=none"
-    cmd "au ColorScheme * hi TelescopeBorder ctermbg=none guibg=none"
-    cmd "au ColorScheme * hi NvimTreeNormal ctermbg=none guibg=none"
-    cmd "let &fcs='eob: '"
-  end
-end
-
-return M
+vim.o.backup = false
+vim.o.showtabline=2                       --Always show tabs
+--vim.o.cursorline=true                   --Enable highlighting of the current line 
+vim.o.showmode=false                      --We don't need to see things like -- INSERT -- anymore
+vim.wo.signcolumn = "yes"                 -- Always show the signcolumn, otherwise it would shift the text each time
+vim.o.mouse = 'a'
+vim.o.splitbelow = true                   -- Horizontal splits will automatically be below
+vim.o.hidden = true
+vim.o.hlsearch = true                     -- highlight all matches on previous search pattern
+vim.o.ignorecase = true                   --Ignore case in search pattern
+vim.o.undofile = true                     --Enable Persistent undofile
+vim.o.updatetime = 300
+vim.o.scrolloff = 8
+vim.cmd("set nowrap")                     --Disable Line Wrapping

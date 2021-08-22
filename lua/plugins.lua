@@ -17,7 +17,7 @@ function()
     requires = 'kyazdani42/nvim-web-devicons'
       } 
   use 'glepnir/dashboard-nvim'
-  use 'tpope/vim-commentary'
+ -- use 'tpope/vim-commentary'
   use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
@@ -42,4 +42,6 @@ function()
   use 'onsails/lspkind-nvim'
   use 'folke/which-key.nvim'
   use 'akinsho/nvim-toggleterm.lua'
+  use 'terrortylor/nvim-comment'
+  use 'romgrk/barbar.nvim'
   end)
