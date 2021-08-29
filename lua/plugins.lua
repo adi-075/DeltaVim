@@ -11,7 +11,6 @@ end
 return require('packer').startup(
 function()
   use 'wbthomason/packer.nvim'
-  use {'dracula/vim', as = 'dracula'}
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons'
@@ -22,15 +21,9 @@ function()
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
       }
-  use {
-  'hoob3rt/lualine.nvim',
-  requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
   use 'liuchengxu/space-vim-dark'
-  use 'marko-cerovac/material.nvim'
   use 'norcalli/nvim-colorizer.lua'
   use 'windwp/nvim-autopairs'
---  use 'romgrk/barbar.nvim'
   use 'neovim/nvim-lspconfig'
   use 'kabouzeid/nvim-lspinstall'
   use 'hrsh7th/nvim-compe'
@@ -44,4 +37,14 @@ function()
   use 'akinsho/nvim-toggleterm.lua'
   use 'terrortylor/nvim-comment'
   use 'romgrk/barbar.nvim'
+  use 'NTBBloodbath/doom-one.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    }
+  }
+  use 'andweeb/presence.nvim'
+  use 'hoob3rt/lualine.nvim'
   end)

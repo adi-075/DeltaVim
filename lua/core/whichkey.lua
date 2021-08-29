@@ -1,5 +1,5 @@
 require("which-key").setup{
-  plugins = {
+  plugin = {
     marks = true, -- shows a list of your marks on ' and `
     registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
     spelling = {
@@ -57,4 +57,4 @@ require("which-key").setup{
     i = { "j", "k" },
     v = { "j", "k" },
   },
-}
+  }

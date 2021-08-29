@@ -8,7 +8,7 @@ map('n', '<S-h>', ':BufferNext<CR>', opts)
 require("which-key").setup{
 
   animation = true,
-  auto_hide = false,
+  auto_hide = true,
   tabpages = true,
   closable = true,
   clickable = true,
