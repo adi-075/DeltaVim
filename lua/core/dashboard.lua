@@ -9,6 +9,10 @@ vim.g.dashboard_custom_section = {
         description = {"  Recently Used Files"},
         command = "Telescope oldfiles"
     },
+    -- c = {
+    --     description = { "  Recent Projects    " },
+    --     command = "Telescope projects",
+    -- },
     c = {
         description = {"  Find Word          "},
         command = "Telescope live_grep"
@@ -18,7 +22,8 @@ vim.g.dashboard_custom_section = {
 	 command = "Telescope colorscheme"
     },
 }
- vim.g.dashboard_custom_footer = {'Hi, Adi!'}
+ -- vim.g.dashboard_custom_footer = {'Hi, Adi!'}
+--vim.g.dashboard_custom_footer = {'LunarVim loaded '..packages..' plugins  '}
 vim.g.dashboard_custom_header = {
  ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
  ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
