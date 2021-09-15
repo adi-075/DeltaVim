@@ -1,11 +1,11 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
--- Move to Previous/Next Buffer
 map('n', '<S-l>', ':BufferPrevious<CR>', opts)
+-- Move to Previous/Next Buffer
 map('n', '<S-h>', ':BufferNext<CR>', opts)
 
-require("which-key").setup{
+vim.g.bufferline = {
 
   animation = true,
   auto_hide = true,
@@ -23,3 +23,15 @@ require("which-key").setup{
   maximum_length = 30,
   no_name_title = nil,
 }
+
+-- require('bufferline').setup {
+--   options = {
+--     show_close_icon = false,
+--     show_buffer_close_icons = false,
+--     offsets = {{
+--       filetype = 'NvimTree',
+--       text = 'NVIMTREE',
+--       text_align = 'left'
+--     }}
+--   }
+-- }

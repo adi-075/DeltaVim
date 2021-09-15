@@ -46,3 +46,4 @@ vim.cmd 'syntax on'
 o.number = true
 o.relativenumber = true
 o.cursorline = true                 --Enable highlighting of the current line 
+g.transparent_background = true 
