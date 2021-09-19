@@ -43,10 +43,6 @@ packer.startup(function()
   use 'kabouzeid/nvim-lspinstall'
   use 'hrsh7th/nvim-compe'
   use 'hrsh7th/vim-vsnip'
-  use {
-    'ChristianChiarulli/nvcode-color-schemes.vim',
-    opt = true
-  }
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-treesitter/playground'
   use 'p00f/nvim-ts-rainbow'
