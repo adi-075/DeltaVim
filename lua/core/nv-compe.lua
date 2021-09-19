@@ -14,8 +14,8 @@ require'compe'.setup {
   documentation = {
     border = { '', '' ,'', ' ', '', '', '', ' ' }, -- the border option is the same as `|help nvim_open_win|`
     winhighlight = "NormalFloat:CompeDocumentation,FloatBorder:CompeDocumentationBorder",
-    max_width = 120,
-    min_width = 60,
+    max_width = 150,
+    min_width = 70,
     max_height = math.floor(vim.o.lines * 0.3),
     min_height = 1,
   };

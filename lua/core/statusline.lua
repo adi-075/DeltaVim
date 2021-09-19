@@ -1,7 +1,7 @@
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'ayu_mirage',
+    theme = 'nightfly',
     component_separators = {},
     section_separators = {},
     disabled_filetypes = { "dashboard", "NvimTree", "Outline" },

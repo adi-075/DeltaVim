@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/aditya/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?.lua;/home/aditya/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?/init.lua;/home/aditya/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?.lua;/home/aditya/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/aditya/.cache/nvim/packer_hererocks/2.0.5/lib/lua/5.1/?.so"
+local package_path_str = "/home/aditya/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/aditya/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/aditya/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/aditya/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/aditya/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -77,10 +77,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
-  ["doom-one.nvim"] = {
-    loaded = true,
-    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/doom-one.nvim"
-  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/github-nvim-theme"
@@ -100,10 +96,6 @@ _G.packer_plugins = {
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/lualine.nvim"
-  },
-  ["nvcode-color-schemes.vim"] = {
-    loaded = true,
-    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -149,9 +141,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
+  ["onedarker.nvim"] = {
     loaded = true,
-    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/onedark.nvim"
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/onedarker.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -168,10 +160,6 @@ _G.packer_plugins = {
   ["presence.nvim"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/presence.nvim"
-  },
-  ["space-vim-dark"] = {
-    loaded = true,
-    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/space-vim-dark"
   },
   ["telescope.nvim"] = {
     loaded = true,
