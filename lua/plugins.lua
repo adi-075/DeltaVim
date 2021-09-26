@@ -22,6 +22,7 @@ local use = packer.use
 packer.reset()
 
 packer.startup(function()
+-- Packer can manage itself as an optional plugin
  use  {
    'wbthomason/packer.nvim',
  }
@@ -41,8 +42,19 @@ packer.startup(function()
   use 'windwp/nvim-autopairs'
   use 'neovim/nvim-lspconfig'
   use 'kabouzeid/nvim-lspinstall'
-  use 'hrsh7th/nvim-compe'
-  use 'hrsh7th/vim-vsnip'
+  -- use 'hrsh7th/nvim-compe'
+  use {
+    'hrsh7th/nvim-cmp',
+    requires = {
+      "L3MON4D3/LuaSnip",
+      "saadparwaiz1/cmp_luasnip",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-nvim-lua",
+    }
+  }
+  -- use 'hrsh7th/vim-vsnip'
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-treesitter/playground'
   use 'p00f/nvim-ts-rainbow'

@@ -7,7 +7,7 @@ vim.g.mapleader = ' '
 map('n', '<Leader>h', ':set hlsearch!<CR>', { noremap = true, silent = true })
 
 -- explorer
-map('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+-- map('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 
 -- better window movement

@@ -117,7 +117,7 @@ ins_left {
 ins_left {
   'filename',
   condition = conditions.buffer_not_empty,
-  color = {fg = colors.magenta, gui = 'bold'}
+  color = {fg = colors.fg}
 }
 
 ins_left {
@@ -178,13 +178,15 @@ ins_right {
   color = {fg = colors.green, gui = 'bold'}
 }
 
+-- ins_right {'progress', color = {fg = colors.fg, gui = 'bold'}}
+
 ins_right {'location'}
 
-ins_right {
-  function() return '▊' end,
-  color = {fg = colors.blue},
-  right_padding = 0
-}
+-- ins_right {
+--   function() return '▊' end,
+--   color = {fg = colors.blue},
+--   right_padding = 0
+-- }
 
 -- Now don't forget to initialize lualine
 lualine.setup(config)

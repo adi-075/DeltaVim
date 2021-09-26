@@ -69,9 +69,33 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/LuaSnip"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/barbar.nvim"
+  },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-lua"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
   },
   ["dashboard-nvim"] = {
     loaded = true,
@@ -101,6 +125,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
@@ -108,10 +136,6 @@ _G.packer_plugins = {
   ["nvim-comment"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/nvim-comment"
-  },
-  ["nvim-compe"] = {
-    loaded = true,
-    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -164,10 +188,6 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/telescope.nvim"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/vim-vsnip"
   },
   ["vscode.nvim"] = {
     loaded = true,

@@ -14,29 +14,48 @@ else
 end
 
 require'lspconfig'.sumneko_lua.setup {
-  cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
-  settings = {
-    Lua = {
-      runtime = {
-        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-        version = 'LuaJIT',
-        -- Setup your lua path
-        path = vim.split(package.path, ';')
-      },
-      diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = {'vim', 'use'},
-        disable = {"lowercase-global"}
-      },
-      workspace = {
-        -- Make the server aware of Neovim runtime files
-       library = vim.api.nvim_get_runtime_file("", true),
-       -- library = {[vim.fn.expand('$VIMRUNTIME/lua')] = true, [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true}
-      },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
-    },
-  },
+    cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
+    settings = {
+        Lua = {
+            runtime = {
+                -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+                version = 'LuaJIT',
+                -- Setup your lua path
+                path = vim.split(package.path, ';')
+            },
+            diagnostics = {
+                -- Get the language server to recognize the `vim` global
+                globals = {'vim', 'use'},
+                disable = {"lowercase-global"}
+            },
+            workspace = {
+                -- Make the server aware of Neovim runtime files
+                library = vim.api.nvim_get_runtime_file("", true)
+                -- library = {[vim.fn.expand('$VIMRUNTIME/lua')] = true, [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true}
+            },
+            -- Do not send telemetry data containing a randomized but unique identifier
+            telemetry = {
+                enable = false
+            }
+        }
+    }
 }
+
+require"lspconfig".efm.setup {
+    init_options = {
+        documentFormatting = true
+    },
+    filetypes = {"lua"},
+    settings = {
+        rootMarkers = {".git/"},
+        languages = {
+            lua = {
+                {
+                    formatCommand = "lua-format -i --no-keep-simple-function-one-line --no-break-after-operator --column-limit=150 --break-after-table-lb",
+                    formatStdin = true
+                }
+            }
+        }
+    }
+}
+

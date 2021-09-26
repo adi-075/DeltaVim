@@ -7,7 +7,7 @@ map('n', '<S-h>', ':BufferNext<CR>', opts)
 
 vim.g.bufferline = {
 
-  animation = true,
+  animation = false,
   auto_hide = true,
   tabpages = true,
   closable = true,
