@@ -79,10 +79,10 @@ ins_left {
     local mode_color = {
       n = colors.blue,
       i = colors.green,
-      v = colors.red,
-      [''] = colors.red,
-      V = colors.red,
-      c = colors.magenta,
+      v = colors.yellow,
+      [''] = colors.yellow,
+      V = colors.yellow,
+      c = colors.yellow,
       no = colors.blue,
       s = colors.orange,
       S = colors.orange,
@@ -90,12 +90,12 @@ ins_left {
       ic = colors.yellow,
       R = colors.violet,
       Rv = colors.violet,
-      cv = colors.red,
-      ce = colors.red,
+      cv = colors.yellow,
+      ce = colors.yellow,
       r = colors.cyan,
       rm = colors.cyan,
       ['r?'] = colors.cyan,
-      ['!'] = colors.red,
+      ['!'] = colors.yellow,
       t = colors.red
     }
     vim.api.nvim_command(

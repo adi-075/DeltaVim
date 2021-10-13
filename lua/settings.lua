@@ -8,7 +8,7 @@ end
 
 -------------------------------------------------------------------------------
 --                            General Settings                               --
--------------------------------------------------------------------------------         
+-------------------------------------------------------------------------------
 
 o.clipboard="unnamedplus"             --Copy paste between vim and everything else
 o.incsearch=true
@@ -37,13 +37,13 @@ o.completeopt = 'menuone,noselect'
 
 -------------------------------------------------------------------------------
 --                             Theming                                       --
--------------------------------------------------------------------------------         
+-------------------------------------------------------------------------------
 
 
 o.termguicolors = true
 o.background = 'dark'
 vim.cmd 'syntax on'
-o.number = true
+   o.number = true
 o.relativenumber = true
-o.cursorline = true                 --Enable highlighting of the current line 
-g.transparent_background = true 
+o.cursorline = true                 --Enable highlighting of the current line
+g.transparent_background = true

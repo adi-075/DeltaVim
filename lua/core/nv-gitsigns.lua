@@ -31,7 +31,8 @@ signs = {
           linehl = "GitSignsChangeLn",
         },
       },
-   numhl = false,
+        signcolumn = true,
+        numhl = false,
         linehl = false,
         keymaps = {
           -- Default keymap options
@@ -43,3 +44,4 @@ signs = {
         update_debounce = 200,
         status_formatter = nil, -- Use default
     }
+

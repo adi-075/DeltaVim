@@ -94,6 +94,7 @@ wk.register({
           "Sort by language",
         },
       },
+      z = { "<cmd>ZenMode<cr>", "Zen" },
       p = {
         name = "Packer",
         c = { "<cmd>PackerCompile<cr>", "Compile" },
@@ -102,6 +103,7 @@ wk.register({
         s = { "<cmd>PackerSync<cr>", "Sync" },
         S = { "<cmd>PackerStatus<cr>", "Status" },
         u = { "<cmd>PackerUpdate<cr>", "Update" },
+        C = { "<cmd>PackerClean<cr>", "Clean" },
       },
       g = {
         name = "Git",

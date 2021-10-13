@@ -9,15 +9,15 @@ vim.g.dashboard_custom_section = {
         description = {"  Recently Used Files"},
         command = "Telescope oldfiles"
     },
-    -- c = {
-    --     description = { "  Recent Projects    " },
-    --     command = "Telescope projects",
-    -- },
     c = {
+        description = { "  Recent Projects    " },
+        command = "Telescope projects",
+    },
+    d = {
         description = {"  Find Word          "},
         command = "Telescope live_grep"
     },
-    d = {
+    e = {
 	 description = {"  Colorscheme        "},
 	 command = "Telescope colorscheme"
     },
@@ -51,4 +51,10 @@ vim.g.dashboard_custom_header = {
 } ]]
 
 
+--local num_plugins_loaded = #vim.fn.globpath(get_runtime_dir() .. "/site/pack/packer/start", "*", 0, 1)
 
+ -- local footer = {
+ --    "LunarVim loaded " .. num_plugins_loaded .. " plugins ",
+ --    "",
+ --    lvim_site,
+ --  }

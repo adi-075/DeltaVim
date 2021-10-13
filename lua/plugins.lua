@@ -1,12 +1,4 @@
--- local execute = vim.api.nvim_command
--- local fn = vim.fn
--- local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
--- if fn.empty(fn.glob(install_path)) > 0 then
---   fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
---   vim.cmd 'packadd packer.nvim'
--- end
-
--- return require('packer').startup(function(use)
+-- TODO:Configure LSP Signature to work with Lua
 
 packer = require 'packer'
 packer.init{
@@ -42,7 +34,6 @@ packer.startup(function()
   use 'windwp/nvim-autopairs'
   use 'neovim/nvim-lspconfig'
   use 'kabouzeid/nvim-lspinstall'
-  -- use 'hrsh7th/nvim-compe'
   use {
     'hrsh7th/nvim-cmp',
     requires = {
@@ -71,10 +62,31 @@ packer.startup(function()
   }
   use 'andweeb/presence.nvim'
   use 'hoob3rt/lualine.nvim'
-  use 'Mofiqul/vscode.nvim'
   use 'terrortylor/nvim-comment'
   use 'projekt0n/github-nvim-theme'
   use 'LunarVim/onedarker.nvim'
+  use 'mhartington/formatter.nvim'
+  use 'folke/tokyonight.nvim'
+  use 'folke/zen-mode.nvim'
+  use 'karb94/neoscroll.nvim'
+  use 'ray-x/lsp_signature.nvim'
+  -- Emacs-Orgmode Plugins
+  use {'kristijanhusak/orgmode.nvim',
+  config = function ()
+    require('orgmode').setup({
+      org_agenda_files = {'~/Org/agenda/*'},
+      org_default_notes_file = '~/Org/refile.org',
+    })
+  end
+}
+  use {'akinsho/org-bullets.nvim',
+  config = function ()
+    require("org-bullets").setup {
+        symbols = { "◉", "○", "✸", "✿" }
+      }
+  end
+}
+  use 'lukas-reineke/headlines.nvim'
 end)
 
 

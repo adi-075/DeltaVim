@@ -10,14 +10,18 @@ require('telescope').setup{
       '--smart-case'
     },
     },
-    extensions = {
-        project = {
-          base_dirs = {
-           '$HOME',
-            {path = '~/git/Github Repos', max_depth = 4},
-          },
-        },
+  extensions = {
+    project = {
+      base_dirs = {
+        '~/dev/src',
+        {vim.env.HOME .. "/git/", max_depth=2},
+        {'~/dev/src3', max_depth = 4},
+        {path = '~/dev/src4'},
+        {path = '~/dev/src5', max_depth = 2},
       },
+      hidden_files = true -- default: false
+  },
+},
     prompt_prefix = " ",
     selection_caret = " ",
     entry_prefix = "  ",

@@ -101,6 +101,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/formatter.nvim"
+  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/github-nvim-theme"
@@ -109,9 +113,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
+  ["headlines.nvim"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/headlines.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -120,6 +132,10 @@ _G.packer_plugins = {
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -169,6 +185,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/onedarker.nvim"
   },
+  ["org-bullets.nvim"] = {
+    config = { "\27LJ\2\nd\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\fsymbols\1\0\0\1\5\0\0\b◉\b○\b✸\b✿\nsetup\16org-bullets\frequire\0" },
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/org-bullets.nvim"
+  },
+  ["orgmode.nvim"] = {
+    config = { "\27LJ\2\n�\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21org_agenda_files\1\0\1\27org_default_notes_file\21~/Org/refile.org\1\2\0\0\19~/Org/agenda/*\nsetup\forgmode\frequire\0" },
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/orgmode.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/packer.nvim"
@@ -189,17 +215,29 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
-  ["vscode.nvim"] = {
+  ["tokyonight.nvim"] = {
     loaded = true,
-    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/vscode.nvim"
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/tokyonight.nvim"
   },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/home/aditya/.local/share/nvim/site/pack/packer/start/which-key.nvim"
+  },
+  ["zen-mode.nvim"] = {
+    loaded = true,
+    path = "/home/aditya/.local/share/nvim/site/pack/packer/start/zen-mode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: orgmode.nvim
+time([[Config for orgmode.nvim]], true)
+try_loadstring("\27LJ\2\n�\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21org_agenda_files\1\0\1\27org_default_notes_file\21~/Org/refile.org\1\2\0\0\19~/Org/agenda/*\nsetup\forgmode\frequire\0", "config", "orgmode.nvim")
+time([[Config for orgmode.nvim]], false)
+-- Config for: org-bullets.nvim
+time([[Config for org-bullets.nvim]], true)
+try_loadstring("\27LJ\2\nd\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\fsymbols\1\0\0\1\5\0\0\b◉\b○\b✸\b✿\nsetup\16org-bullets\frequire\0", "config", "org-bullets.nvim")
+time([[Config for org-bullets.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
